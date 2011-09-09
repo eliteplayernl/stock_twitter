@@ -5,7 +5,6 @@ Use a list of predefined bull and bear tweets to train the classifier, then feed
 
 ##Todo
 *  Create two files of bullish and bearish tweets, respectivly
-*  Pull tweets from twitter and determine bull or bear
 *  Count bull/bear tweets and determine what sentiment is
 
 Trent Hauck
