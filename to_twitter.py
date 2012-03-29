@@ -1,15 +1,17 @@
 import classify
 import tweepy
+import token
+
 
 def pretty_print (number):
   return str(round(number,2))
 
 def faire_le_tweet(bull_count, bear_count, total_count):
-  consumer = {"key" : "RqJc1h8GxxpXEQwPKiCoJw",
-              "secret" : "6sP8buVdZMuBRXU3z7wsDaeL2ohM7DDIPozun3GIwc"}
+  consumer = {"key" : token.consumer_key(),
+              "secret" : token.consumer_secret()}
 
-  access_token = {"key" : "372332469-R6EnkIWd1GWXRnNFakk4LsrlpfsthCddL6gz4lbs",
-                  "secret" : "0hFQj66GbUkF0FxiWTkO4Zx7CrgmjYJwcNsqSqO3w"}
+  access_token = {"key" : token.access_key(),
+                  "secret" : token.access_secret()}
 
   auth = tweepy.OAuthHandler(consumer["key"], consumer["secret"])
   auth.set_access_token(access_token["key"],access_token["secret"])
