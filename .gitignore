@@ -2,4 +2,4 @@ tweets.txt
 classify.*
 tokens/*
 token.py
-set_up*
+set_up_tokens.py
